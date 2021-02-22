@@ -59,7 +59,7 @@ class CustomerController extends Controller
      */
     public function edit(Customer $customer)
     {
-        //
+        return view('customers.edit', compact('customer'));
     }
 
     /**
@@ -71,7 +71,16 @@ class CustomerController extends Controller
      */
     public function update(Request $request, Customer $customer)
     {
-        //
+        $validatedData = $request->validate([
+            'firstname' => 'required',
+            'lastname' => 'required',
+            'age' => 'required',
+            'nationality' => 'required',
+            'premium' => 'required',
+        ]);
+        //$data = $request->all();
+        $customer->update($validatedData);
+        return redirect()->route('customers.index');
     }
 
     /**

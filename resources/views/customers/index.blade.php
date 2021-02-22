@@ -22,7 +22,18 @@
         <td>{{$item->lastname}}</td>
         <td>{{$item->age}}</td>
         <td>{{$item->nationality}}</td>
-        <td>{{$item->premium}}</td>
+        <td>{{$item->premium ? 'attivo' : 'disattivo'}}</td>
+        <td>
+          {{-- <a href="{{route('customers.show',$item->id)}}">View</a> --}}
+          <a href="{{route('customers.edit',$item->id)}}">Edit</a>
+          {{-- <form action="{{route('customers.destroy',$item->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button><a style="color: red">Delete</a></button>
+            
+          </form> --}}
+          
+        </td>
       </tr>
       @empty
       <tr>
