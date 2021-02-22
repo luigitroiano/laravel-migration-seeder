@@ -8,8 +8,8 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>PRODUCT</th>
-        <th>PREZZO</th>
+        <th>CATEGORY</th>
+        <th>TYPE</th>
       </tr>
     </thead>
     <tbody>

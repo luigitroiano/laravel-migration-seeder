@@ -13,6 +13,7 @@
       <a href="{{ route('home') }}">Home</a>
       <a href="{{ route('products.index') }}">Product</a>
       <a href="{{ route('category.index') }}">Categories</a>
+      <a href="{{ route('customers.index') }}">Customers</a>
     </div>
   </nav>
   <main>

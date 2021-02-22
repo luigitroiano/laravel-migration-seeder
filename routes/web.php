@@ -20,3 +20,4 @@ Route::get('blog', 'PageController@product')->name('product');
 
 Route::resource('products', 'ProductController');
 Route::resource('category', 'CategoryController');
+Route::resource('customers', 'CustomerController');
