@@ -19,3 +19,4 @@ Route::get('about', 'PageController@about')->name('about');
 Route::get('blog', 'PageController@product')->name('product');
 
 Route::resource('products', 'ProductController');
+Route::resource('category', 'CategoryController');
