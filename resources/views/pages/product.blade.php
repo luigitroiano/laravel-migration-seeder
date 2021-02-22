@@ -3,5 +3,5 @@
   Contact
 @endsection
 @section('content')
-  <h1>CONTACT</h1>
+  <h1>PRODUCT</h1>
 @endsection

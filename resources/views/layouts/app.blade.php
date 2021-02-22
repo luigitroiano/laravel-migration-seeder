@@ -9,14 +9,14 @@
 </head>
 <body>
   <nav>
-    <div>
-      <a href="">Docs</a>
-      <a href="">Laracasts</a>
-      <a href="">News</a>
+    <div class="navbar">
+      <a href="{{ route('home') }}">Home</a>
+      <a href="{{ route('about') }}">About</a>
+      <a href="{{ route('products.index') }}">Product</a>
     </div>
   </nav>
   <main>
-    @yield('content');
+    @yield('content')
   </main>
 </body>
 </html>
